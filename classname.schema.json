@@ -1,0 +1,59 @@
+{
+	"meta:license": [
+		"Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/Class/classname",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "tilte",
+	"type": "object",
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:extends": "https://ns.genesis.com/xdm/classname/record",
+	"description": "classdesc",
+	"definitions": {
+		"classname": {
+			"properties": [
+				{
+					"XDM:propname": {
+						"title": "proptitle",
+						"type": "object",
+						"description": "propdesc",
+						"examples": [
+							"example"
+						],
+						"properties": [
+							{
+								"xdm1:propname1": {
+									"title": "proptitle1",
+									"type": "string",
+									"description": "propdesc1",
+									"examples": [
+										"ex"
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"XDM2:propname2": {
+						"title": "proptitle2",
+						"type": "integer",
+						"description": "propdesc",
+						"examples": [
+							"example2"
+						]
+					}
+				}
+			]
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "#/definitions/classname"
+		}
+	],
+	"meta:Status": "experimental"
+}
